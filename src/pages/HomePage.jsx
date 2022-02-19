@@ -4,22 +4,23 @@ import {plusAction, subAction, mulAction, divAction} from '../action/reducer1'
 // page nào cũng có thể dùng các reducer đã combine ở trong store chỉ cần sử dụng các hook cơ bản của react-redux
 // mô tả 1 trong các chức năng của redux là dùng " mọi lúc, mọi nơi "
 function HomePage() {
+    // lấy state từ redux store 
     const state = useSelector(state => state.reducer1) 
     const disPatch = useDispatch();
     const handlePlus = () => {
-        const action = plusAction(state)
+        const action = plusAction()
         disPatch(action)
     }
     const handleSub = () => {
-        const action = subAction(state)
+        const action = subAction()
         disPatch(action)
     }
     const handleMul = () => {
-        const action = mulAction(state)
+        const action = mulAction()
         disPatch(action)
     }
     const handleDiv = () => {
-        const action = divAction(state)
+        const action = divAction()
         disPatch(action)
     }
     return (

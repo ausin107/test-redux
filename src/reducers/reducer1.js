@@ -1,5 +1,6 @@
 // tạo reducer để hiện thực các hàm logic khi dùng vs redux
 const initialSate = 0
+//initial state khi la obj phải update theo kiểu immuation
 const reducer1 = (state = initialSate, action) => {
     switch (action.type) {
         case 'PLUS_ACTION':
