@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux"
 import { v4 as uuidv4 } from 'uuid';
-import {plusAction, subAction, mulAction, divAction, addHistory} from '../action/reducer1'
+import {plusAction, subAction, mulAction, divAction, addHistory} from '../action/actions'
 // page nào cũng có thể dùng các reducer đã combine ở trong store chỉ cần sử dụng các hook cơ bản của react-redux
 // mô tả 1 trong các chức năng của redux là dùng " mọi lúc, mọi nơi "
 function HomePage() {
