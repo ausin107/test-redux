@@ -8,25 +8,34 @@
 //         payload: data
 //     }
 // }
-export const plusAction = () => {
+export const addHistory = (data) => {
+    return {
+        type: 'ADD_HISTORY',
+        payload: data
+    }
+}
+export const plusAction = (data) => {
     return {
         type: 'PLUS_ACTION',
+        payload: data
         //payload: dùng payload có dữ liệu bên ngoài cần thực hiện
     }
 }
-export const subAction = () => {
+export const subAction = (data) => {
     return {
-        type: 'SUB_ACTION'
+        type: 'SUB_ACTION',
+        payload: data
     }
 }
-export const mulAction = () => {
+export const mulAction = (data) => {
     return {
         type: 'MUL_ACTION',
-        //payload: dùng payload có dữ liệu bên ngoài cần thực hiện
+        payload: data
     }
 }
-export const divAction = () => {
+export const divAction = (data) => {
     return {
-        type: 'DIV_ACTION'
+        type: 'DIV_ACTION',
+        payload: data
     }
 }
